@@ -1,9 +1,11 @@
 # Stock-Prediction-Model
 
-#Overview
+#Overview:
+
 This repository contains a stock prediction model built using Long Short-Term Memory (LSTM) neural networks. LSTM networks are a type of recurrent neural network (RNN) well-suited for sequence prediction problems, making them ideal for time series data such as stock prices.
 
-#Features
+#Features:
+
   Data Preprocessing: Efficiently handle and prepare historical stock price data for training.
   
   LSTM Model Architecture: Implements a robust LSTM architecture for stock price prediction.
@@ -12,10 +14,11 @@ This repository contains a stock prediction model built using Long Short-Term Me
   
   Data Visualization: Visualize stock price trends and model predictions with Matplotlib and Seaborn.
 
-#Requirements
+#Requirements:
+
   Python 3.x
   
-  Libraries:
+#Libraries:
 
   TensorFlow/Keras
   
@@ -31,13 +34,13 @@ This repository contains a stock prediction model built using Long Short-Term Me
   
   y-finance
 
-Dataset
+#Dataset:
+
 
 The Yahoo Finance dataset typically includes historical stock market data, providing a wealth of information for financial analysis and research. 
 
-Here’s an overview of the key components you might find in such a dataset:
 
-#Key Features of the Yahoo Finance Dataset
+#Key Features of the Yahoo Finance Dataset:
 
 Date: The date for each record, usually formatted as YYYY-MM-DD.
 
