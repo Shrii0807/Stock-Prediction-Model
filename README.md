@@ -1,10 +1,10 @@
 # Stock-Prediction-Model
+This is a Stock Price Prediction web application that uses Long Short-Term Memory (LSTM) neural networks to forecast stock prices based on historical data. The application retrieves stock data from Yahoo Finance, processes it, and visualizes key metrics and trends. Built using Streamlit for a seamless web interface, the app provides users with an interactive experience for stock data analysis and prediction.
 
-#Overview:
+![image](https://github.com/user-attachments/assets/337d19c4-c8f1-4b5a-a3e8-46b904fce059)
+![image](https://github.com/user-attachments/assets/d5cfdc79-60ed-4bcd-b7cc-cce3ef333d68)
 
-This repository contains a stock prediction model built using Long Short-Term Memory (LSTM) neural networks. LSTM networks are a type of recurrent neural network (RNN) well-suited for sequence prediction problems, making them ideal for time series data such as stock prices.
-
-#Features:
+# Features:
 
   Data Preprocessing: Efficiently handle and prepare historical stock price data for training.
   
@@ -14,49 +14,35 @@ This repository contains a stock prediction model built using Long Short-Term Me
   
   Data Visualization: Visualize stock price trends and model predictions with Matplotlib and Seaborn.
 
-#Requirements:
+  User-Friendly Interface: A simple input field to enter the stock ticker symbol.
+  
+  Data Visualization: Displays a Closing Price vs. Time chart with 100-day and 200-day moving averages.
+  
+  Statistical Summary: Presents a table with key statistical data from 2010-2019, including open, high, low, close, and volume information.
+  
+  Real-Time Forecasting: Uses LSTM neural networks to predict stock prices based on historical trends.
+  
+# Technologies used:
 
-  Python 3.x
-  
-#Libraries:
+Machine Learning Model: Long Short-Term Memory (LSTM) neural network
 
-  TensorFlow/Keras
-  
-  NumPy
-  
-  Pandas
+Data Source: Yahoo Finance (using yfinance library)
 
-  Matplotlib
-  
-  Seaborn
-  
-  scikit-learn
-  
-  y-finance
+Web Application: Streamlit
 
-#Dataset:
+Libraries: Pandas, Numpy, Matplotlib, TensorFlow/Keras for model building and training
+
+ # Dataset:
 
 
 The Yahoo Finance dataset typically includes historical stock market data, providing a wealth of information for financial analysis and research. 
 
+# How It Works:
 
-#Key Features of the Yahoo Finance Dataset:
+Data Extraction: The application uses the Yahoo Finance API using the stock ticker like (AAPL, SBIN.NS etc.) to extract historical stock data.
 
-Date: The date for each record, usually formatted as YYYY-MM-DD.
+Data Processing: The data is processed to calculate 100-day and 200-day moving averages, which help smooth out short-term fluctuations and show longer-term trends.
 
-Open: The price of the stock at the market open for the given day.
+Prediction Model: An LSTM neural network is trained on the historical data to predict future stock prices.
 
-High: The highest price reached during the trading session.
-
-Low: The lowest price during the trading session.
-
-Close: The price of the stock at the market close for that day.
-
-Adjusted Close: The closing price adjusted for dividends and stock splits, providing a more accurate reflection of a stock’s value over time.
-
-Volume: The total number of shares traded during the day, which can indicate liquidity and market activity.
-
-Ticker Symbol: The unique identifier for the stock, which represents the company in stock exchanges (e.g., AAPL for Apple).
-
-
-
+Streamlit Web Interface: Streamlit is used to create a simple and interactive web app where users can input a stock ticker and view predictions along with historical data and trends.
